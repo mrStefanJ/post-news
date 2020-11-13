@@ -1,0 +1,13 @@
+@import '../../style/breakpoints.scss';
+.feat-home {
+    padding: 0 30px;
+}
+
+.feat-home__post-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include respond-to('md', 'xl') {
+        flex-direction: row;
+    }
+}

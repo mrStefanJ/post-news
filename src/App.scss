@@ -1,0 +1,79 @@
+@import './style/breakpoints.scss';
+@import './style/typography.scss';
+
+$gutter: 12px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h-vertical-spacer--xxl {
+  height: 60px;
+}
+.h-vertical-spacer--l {
+  height: 40px;
+}
+.h-vertical-spacer--m {
+  height: 30px;
+}
+.h-vertical-spacer--s {
+  height: 20px;
+}
+.h-vertical-spacer--xs {
+  height: 10px;
+}
+
+.h-vertical-spacer--xxs {
+  height: 5px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+  margin-left: $gutter;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.col-4 {
+  width: 30%;
+  margin-left: $gutter
+}
+.col-4:first-child {
+    margin-left: 0;
+  }
+.col-4:nth-child(4n) {
+  margin-left: 0;
+}
+
+.col-md-6:nth-child(2n+1){
+  @include respond-to('md','md') {
+  margin-left: 0;
+  }
+}
+
+.col-md-6 {
+  @include respond-to('md','md') {
+    width: 49%;
+    margin-left: $gutter
+  }
+}
+
+.col-lg-4 {
+  @include respond-to('lg', 'xl') {
+    width: 30%;
+    margin-left: $gutter
+  }
+}
+.col-lg-4:first-child,
+.col-lg-4:nth-child(4n) {
+  @include respond-to('lg', 'xl') {
+    margin-left: 0;
+  }
+}

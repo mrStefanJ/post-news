@@ -1,0 +1,53 @@
+@import '../../style/colors.scss';
+
+.feat-adapt-post__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feat-adapt-post__textfield {
+    padding: 5px;
+    padding-right: 0;
+    height: 40px;
+    font-size: 16px;
+}
+
+.feat-adapt-post__textarea {
+    padding: 5px;
+    padding-right: 0;
+    font-size: 16px;
+    min-height: 80px;
+}
+
+.feat-adapt-post__buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.feat-adapt-post__btn-update {
+    color: $color-white;
+    background-color: $color-dark-green;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.feat-adapt-post__btn-update:hover {
+    cursor: pointer;
+    background-color: $color-lime-green;
+}
+
+.feat-adapt-post__btn-cancel {
+    color: $color-black;
+    background-color: $color-light-gray;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    &:hover {
+        cursor: pointer;
+        background-color: $color-dark-gray;
+    }
+}
